@@ -1,0 +1,22 @@
+{
+  "name": "curso-js-typescript",
+  "version": "1.0.0",
+  "description": "typescript sample project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xtuser777/curso-js-typescript.git"
+  },
+  "author": "Lucas S. Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xtuser777/curso-js-typescript/issues"
+  },
+  "homepage": "https://github.com/xtuser777/curso-js-typescript#readme",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
