@@ -1,3 +1,4 @@
 import FormControl from './form-control';
 
-new FormControl();
+const form = new FormControl();
+form.init();
