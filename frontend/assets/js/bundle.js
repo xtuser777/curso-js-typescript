@@ -48,11 +48,15 @@ class FormControl {
         this.form.addEventListener('submit', (e) => {
             e.preventDefault();
             this.removeErrors();
-            this.validate();
+            if (this.validate())
+                alert('Formulário validado com sucesso!');
         });
     }
     validate() {
-        return this.validateUsername() && this.validateEmail() && this.validatePassword();
+        const username = this.validateUsername();
+        const email = this.validateEmail();
+        const password = this.validatePassword();
+        return username && email && password;
     }
     validateUsername() {
         const username = this.inputUsername.value.trim();

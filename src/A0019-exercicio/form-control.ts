@@ -27,12 +27,16 @@ export default class FormControl {
     this.form.addEventListener('submit', (e: SubmitEvent) => {
       e.preventDefault();
       this.removeErrors();
-      this.validate();
+      if (this.validate()) alert('Formulário validado com sucesso!');
     });
   }
 
   private validate(): boolean {
-    return this.validateUsername() && this.validateEmail() && this.validatePassword();
+    const username = this.validateUsername();
+    const email = this.validateEmail();
+    const password = this.validatePassword();
+
+    return username && email && password;
   }
 
   private validateUsername(): boolean {
