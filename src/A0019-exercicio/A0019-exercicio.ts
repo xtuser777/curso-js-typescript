@@ -1,4 +1,5 @@
-import FormControl from './form-control';
+// import FormControl from './form-control';
 
-const form = new FormControl();
-form.init();
+// const form = new FormControl();
+// form.init();
+import '../A0035-exercicio-video/index';
