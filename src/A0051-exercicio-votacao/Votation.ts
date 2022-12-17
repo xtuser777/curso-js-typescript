@@ -38,4 +38,8 @@ export default class Votation implements IVotation {
   get candidates(): Candidate[] {
     return this._candidates;
   }
+
+  addCandidate(candidate: Candidate): void {
+    this._candidates.push(candidate);
+  }
 }
