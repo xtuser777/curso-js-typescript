@@ -19,6 +19,7 @@
   "homepage": "https://github.com/xtuser777/curso-js-typescript#readme",
   "devDependencies": {
     "@types/node": "^18.11.9",
+    "@types/prompt-sync": "^4.2.0",
     "@types/validator": "^13.7.10",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "@typescript-eslint/parser": "^5.42.0",
@@ -33,6 +34,7 @@
     "webpack-cli": "^4.10.0"
   },
   "dependencies": {
+    "prompt-sync": "^4.2.0",
     "validator": "^13.7.0"
   }
 }

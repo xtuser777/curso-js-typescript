@@ -65,4 +65,8 @@ export default class Candidate implements ICandidate {
   addVote(value: Vote): void {
     this._votes.push(value);
   }
+
+  resetVotes(): void {
+    this._votes = [];
+  }
 }
