@@ -68,7 +68,6 @@ export default class VotingApp {
             can.addVote(
               new Vote(
                 id,
-                '',
                 new Candidate(can.id, can.option, can.description, can.votation),
               ),
             );
@@ -97,9 +96,7 @@ export default class VotingApp {
     if (this._votations.length > 0) {
       this._votations.forEach((vot) => {
         console.log(vot.description);
-        vot.candidates.forEach((can) =>
-          console.log(`${can.description} ${can.votes.length}`),
-        );
+        vot.candidates.forEach((can) => console.log(can.description, can.votes.length));
         console.log('#########\n');
       });
     }
